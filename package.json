@@ -1,0 +1,15 @@
+{
+  "name": "spa-resume",
+  "version": "1.0.0",
+  "description": "This will be a single page application, using Express and no frameworks An SPA requires no page refreshing, making it fast It primarily uses either AJAX or Fetch requests to update the page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
