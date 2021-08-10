@@ -1,6 +1,7 @@
 import dashboard from "./views/Dashboard.js"
 import posts from "./views/Posts.js"
 import settings from "./views/settings.js"
+import skills from "./views/Skills.js"
 
 const navigateTo = url => {
     history.pushState(null, null, url)
@@ -12,6 +13,8 @@ const router = async () => {
         { path: '/', view: dashboard},
         { path: '/posts', view: posts},
         { path: '/about', view: settings},
+        { path: '/skills', view: skills},
+
     ];
 
     const potentialMatches = routes.map(route => {

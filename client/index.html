@@ -5,14 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="nav">
-        <a href="/" class="nav__link" data-link>Home</a>
-        <a href="/posts" class="nav__link" data-link>Posts</a>
-        <a href="/about" class="nav__link" data-link>About</a>
-    </nav>
+    <main>
+        <section class="glass">
+    <div class="dashboard">
+        <div>
+            <img src="https://avatars.githubusercontent.com/u/71933707?v=4" alt="">
+            <p>Tordar T.</p>
+        </div>
+        <div class="links">
+            <div class="link">
+                <a href="/" data-link>Home</a>
+            </div>
+            <div class="link">
+                <a href="/posts" data-link>Projects</a>
+            </div>
+            <div class="link">
+                <a href="/about" data-link>About</a>
+            </div>
+            <div class="link">
+                <a href="/skills" data-link>Skills</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>More information goes here</p>
+        </div>
+    
+</div>
     <div id="app"></div>
+
+</section>
+</main>
     <script type="module" src="/static/js/index.js"></script>
+    <script type="text/javascript" src="static/js/materialize.js"></script>
 </body>
 </html>
