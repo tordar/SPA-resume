@@ -5,6 +5,7 @@ export default class extends AbstractView {
         super()
         this.setTitle("About")
     }
+    
     async getHtml(){
         return `
         <div class="cards">
