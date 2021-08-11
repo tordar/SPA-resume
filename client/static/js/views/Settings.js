@@ -9,7 +9,7 @@ export default class extends AbstractView {
         return `
         <div class="cards">
             <div class="card">
-                Here is the about information
+                Generelt en snill gutt
             </div>
         </div>
         `;

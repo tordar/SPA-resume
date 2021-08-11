@@ -39,12 +39,23 @@ img{
     border-radius: 50%;
     width: 7rem;
 }
+
 .link {
     display: flex;
     margin: 2rem 0rem;
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
+    min-width: 100px;
     align-items: center;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    color: black;
+    background: rgb(2,0,36);
+    background: linear-gradient(to right bottom, rgb(174, 174, 230) 0%, rgba(0,212,255,1) 100%);
   }
+
+a {
+    text-decoration: none; 
+}
 
 .footer{
     display: flex;
@@ -52,8 +63,11 @@ img{
     padding: 1rem;
     border-radius: 2rem;
     align-items: center;
-    background: rgb(2,0,36);
-    background: linear-gradient(to right bottom, rgb(174, 174, 230) 0%, rgba(0,212,255,1) 100%);
+}
+
+.footer a{
+    padding: 0.5rem;
+    text-decoration: none;
 }
 
 /* Here on out is the dynamic content */
@@ -99,13 +113,69 @@ img{
 
 /* Font awesome icons */
 .fab {
+    color: black;
 }
 .icons{
     display: flex;
     flex-direction: row;
-    color: black;
 }
 .icons a{
     color: black;
     padding: 5px;
 }
+
+/* For responsive websites */
+@media only screen and (max-width: 800px) {
+    main {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .glass {
+      flex-direction: column;
+    }
+    .dashboard{
+        background-color: aliceblue;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        border-radius: 2rem 2rem 0 0;
+        height: 3vh;
+        align-items: center;
+        justify-content:center;
+        text-align: center;
+
+        flex-wrap: wrap;
+    }
+    .dashboard .info{
+        display: none;
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+    #app{
+        margin: 1rem;
+        flex: 1;
+        flex-direction: column;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        overflow:auto;
+    }
+    .tiles{
+        background-color: rgb(139, 199, 235);
+        min-height: 9rem;
+        width: 20rem;
+        display: inline-block;
+        margin: 10px; 
+        box-shadow: 6px 6px 6px rgba(155, 172, 207, 0.212);
+    }
+  }
