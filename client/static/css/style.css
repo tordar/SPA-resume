@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(2,0,36);
     background: linear-gradient(to right bottom, rgb(174, 174, 230) 0%, rgba(0,212,255,1) 100%);
     font-family: "Poppins", sans-serif;
 }
@@ -51,6 +52,10 @@ img{
     color: black;
     background: rgb(2,0,36);
     background: linear-gradient(to right bottom, rgb(174, 174, 230) 0%, rgba(0,212,255,1) 100%);
+  }
+
+  .link:hover{
+    background: linear-gradient(to right bottom, rgb(202, 202, 255) 0%, rgb(120, 233, 255) 100%);
   }
 
 a {
@@ -100,15 +105,59 @@ a {
 }
 
 .skills{
-    padding: 0;
+    display: inline-grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+   
 }
 .tiles{
     background-color: rgb(139, 199, 235);
     min-height: 9rem;
     width: 12rem;
-    display: inline-block;
     margin: 10px; 
     box-shadow: 6px 6px 6px rgba(155, 172, 207, 0.212);
+}
+
+.tiles:hover{
+    background-color: rgb(166, 208, 235);
+}
+
+.tiles p{
+    margin-top: 30%;
+}
+
+/* Dark mode */
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+#darkbutton{
+    position: relative;
+    bottom: 30px;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: rgb(78, 60, 60);
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
+#darkbutton:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ #darkbutton:before{
+    transform: translateX(20px);
 }
 
 /* Font awesome icons */
@@ -149,7 +198,6 @@ a {
         flex-wrap: wrap;
     }
     .dashboard .info{
-        display: none;
     }
     .links{
         display: flex;

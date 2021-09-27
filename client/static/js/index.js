@@ -61,3 +61,25 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     router()
 })
+
+const app = document.getElementById('glass')
+const main = document.getElementById('main')
+const dashboard = document.getElementById('dashboard')
+let num = 1
+
+const darkButton = document.getElementById('darkbutton')
+darkButton.addEventListener('click', ()=>{
+    num++
+    console.log(num)
+    if (num % 2 == 0){
+        app.setAttribute("style", "background:gray;");
+        main.setAttribute("style", "background:black;");
+        dashboard.setAttribute("style", "background:rgb(34,34,36);");
+    } 
+    if (num % 2 != 0) {
+        app.removeAttribute("style", "background:gray;");
+        main.removeAttribute("style", "background:black;");
+        dashboard.removeAttribute("style", "background:rgb(34,34,36);");
+    }
+})
+

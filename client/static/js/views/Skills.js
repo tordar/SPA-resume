@@ -7,18 +7,38 @@ export default class extends AbstractView {
     }
 
 
+
     async getHtml(){
+
         return `
         <div class="skills">
-            <div class="tiles" id="1">HTML</div>
-            <div class="tiles" id="2">CSS</div>
-            <div class="tiles" id="3">JavaScript</div>
-            <div class="tiles" id="4">Python</div>
-            <div class="tiles" id="5">Web development</div>
-            <div class="tiles" id="6">Cool shit</div>
-            <div class="tiles" id="7">Git</div>
-            <div class="tiles" id="8">Something</div>
-            <div class="tiles" id="9">Else</div>
+            <div class="tiles" id="1">
+                <p>HTML</p>
+            </div>
+            <div class="tiles" id="2">
+                <p>CSS</p>
+            </div>
+            <div class="tiles" id="3">
+                <p>JavaScript</p>
+            </div>
+            <div class="tiles" id="4">
+                <p>Python</p>
+            </div>
+            <div class="tiles" id="5">
+                <p>Web development</p>
+            </div>
+            <div class="tiles" id="6">
+                <p>Design</p>
+            </div>
+            <div class="tiles" id="7">
+                <p>Git</p>
+            </div>
+            <div class="tiles" id="8">
+                <p>Azure</p>
+            </div>
+            <div class="tiles" id="9">
+                <p>Cloud</p>
+            </div>
         </div>
         `;
     }

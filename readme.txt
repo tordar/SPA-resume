@@ -4,5 +4,3 @@ It primarily uses either AJAX or Fetch requests to update the page
 
 It will be deployed via AWS to get experience in a new type of deployment
 
-
-    // "build": "webpack --mode production --config webpack.config.js"
