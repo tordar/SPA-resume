@@ -1,16 +1,14 @@
 import AbstractView from "./AbstractView.js";
 
 
-
 // Add technology symbols to each card (HTML, CSS, JS, API, DB etc.)
-
-
 
 export default class extends AbstractView {
     constructor(params){
         super(params)
         this.setTitle("Projects")
     }
+
     async getHtml(){
         return `
         <div class="cards">
@@ -23,9 +21,16 @@ export default class extends AbstractView {
                     techniques, a couple of simple games and some experimentation with fetch and Ajax by utilising 
                     different APIs. Very informal project that I use to play around with.</p>
                 </div>
-                <div class="icons">
-                     <a href="https://github.com/tordar/Javascript-Playground" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a>
-                     <a href="https://tordar.github.io/Javascript-Playground/" target="_blank"><i class="fab fa-chrome fa-2x"></i></a>
+                <div class='iconContainer'>
+                    <div class="icons">
+                        <a href="https://github.com/tordar/Javascript-Playground" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a>
+                        <a href="https://tordar.github.io/Javascript-Playground/" target="_blank"><i class="fab fa-chrome fa-2x"></i></a>
+                    </div>
+                    <div class="techIcons">
+                        <div><i class="fab fa-html5 fa-2x"></i></div>
+                        <div><i class="fab fa-css3-alt fa-2x"></i></div>
+                        <div><i class="fab fa-js fa-2x"></i></div>
+                    </div>
                 </div>
             </div>
             <div class="card">

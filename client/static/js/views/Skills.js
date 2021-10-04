@@ -6,14 +6,38 @@ export default class extends AbstractView {
         this.setTitle("Skills")
     }
 
+    
 
 
     async getHtml(){
-
+        function resolveAfter2Seconds() {
+            return new Promise(resolve => {
+              setTimeout(() => {
+                // let x = document.getElementsByClassName('tiles')
+                let information = document.querySelector('.information')
+                information.addEventListener('click', ()=>{
+                    information.innerHTML = 'hello'
+                })
+                // for(let i = 0; i<x.length; i++){
+                    
+                // }
+                resolve('resolved');
+              }, 100);
+            });
+          }
+          
+          async function asyncCall() {
+            console.log('calling');
+            const result = await resolveAfter2Seconds();
+            console.log(result);
+          }
+          asyncCall();
+          
+        
         return `
         <div class="skills">
             <div class="tiles" id="1">
-                <p>HTML</p>
+                <p class="information">HTML</p>
             </div>
             <div class="tiles" id="2">
                 <p>CSS</p>

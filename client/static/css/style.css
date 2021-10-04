@@ -164,12 +164,24 @@ input[type="checkbox"]:checked ~ #darkbutton:before{
 .fab {
     color: black;
 }
+.iconContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
 .icons{
     display: flex;
     flex-direction: row;
 }
 .icons a{
     color: black;
+    padding: 5px;
+}
+.techIcons{
+    display: flex;
+    flex-direction: row;
+}
+.techIcons div{
     padding: 5px;
 }
 
@@ -196,8 +208,6 @@ input[type="checkbox"]:checked ~ #darkbutton:before{
         text-align: center;
 
         flex-wrap: wrap;
-    }
-    .dashboard .info{
     }
     .links{
         display: flex;
